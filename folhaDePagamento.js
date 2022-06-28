@@ -5,50 +5,50 @@ Salário Bruto até 1500 (inclusive) - desconto de 5%
 Salário Bruto até 2500 (inclusive) - desconto de 10%
 Salário Bruto acima de 2500 - desconto de 20% Imprima na tela as informações, */
 
-function folhaDePagamento(){
+function folhaDePagamento() {
     let salario = valorHora * horaTrabalhadaMes
-    if (salario <= 900){
+    if (salario <= 900) {
         ir = 0
-        let impostoDeRenda = (salario * ir)/100
-        let inss = (salario *10)/100
-        let fgts = (salario * 11)/100
+        let impostoDeRenda = (salario * ir) / 100
+        let inss = (salario * 10) / 100
+        let fgts = (salario * 11) / 100
         let totalDescontos = impostoDeRenda + inss
         let salarioLiquido = salario - (impostoDeRenda + inss)
 
         console.log(` Informações sobre a folha de pagamento:\n Salário Bruto: R$${salario}\n (-) IR (${ir}%): R$${impostoDeRenda}\n (-) INSS (10%): R$${inss}\n FGTS (11%): R$${fgts}\n Total de descontos: R$${totalDescontos}\n Salário líquido: R$${salarioLiquido}`)
     }
-    else if (salario > 900 && salario <= 1500){
+    else if (salario > 900 && salario <= 1500) {
         ir = 5
-        let impostoDeRenda = (salario * ir)/100
-        let inss = (salario *10)/100
-        let fgts = (salario * 11)/100
+        let impostoDeRenda = (salario * ir) / 100
+        let inss = (salario * 10) / 100
+        let fgts = (salario * 11) / 100
         let totalDescontos = impostoDeRenda + inss
         let salarioLiquido = salario - (impostoDeRenda + inss)
 
         console.log(` Informações sobre a folha de pagamento:\n Salário Bruto: R$${salario}\n (-) IR (${ir}%): R$${impostoDeRenda}\n (-) INSS (10%): R$${inss}\n FGTS (11%): R$${fgts}\n Total de descontos: R$${totalDescontos}\n Salário líquido: R$${salarioLiquido}`)
     }
-    else if (salario > 1500 && salario <= 2500){
+    else if (salario > 1500 && salario <= 2500) {
         ir = 10
-        let impostoDeRenda = (salario * ir)/100
-        let inss = (salario *10)/100
-        let fgts = (salario * 11)/100
+        let impostoDeRenda = (salario * ir) / 100
+        let inss = (salario * 10) / 100
+        let fgts = (salario * 11) / 100
         let totalDescontos = impostoDeRenda + inss
         let salarioLiquido = salario - (impostoDeRenda + inss)
 
         console.log(` Informações sobre a folha de pagamento:\n Salário Bruto: R$${salario}\n (-) IR (${ir}%): R$${impostoDeRenda}\n (-) INSS (10%): R$${inss}\n FGTS (11%): R$${fgts}\n Total de descontos: R$${totalDescontos}\n Salário líquido: R$${salarioLiquido}`)
     }
-    else if (salario > 2500){
+    else if (salario > 2500) {
         ir = 20
-        let impostoDeRenda = (salario * ir)/100
-        let inss = (salario *10)/100
-        let fgts = (salario * 11)/100
+        let impostoDeRenda = (salario * ir) / 100
+        let inss = (salario * 10) / 100
+        let fgts = (salario * 11) / 100
         let totalDescontos = impostoDeRenda + inss
         let salarioLiquido = salario - (impostoDeRenda + inss)
 
         console.log(` Informações sobre a folha de pagamento:\n Salário Bruto: R$${salario}\n (-) IR (${ir}%): R$${impostoDeRenda}\n (-) INSS (10%): R$${inss}\n FGTS (11%): R$${fgts}\n Total de descontos: R$${totalDescontos}\n Salário líquido: R$${salarioLiquido}`)
     }
 
-    else{
+    else {
         console.log('Dados inválidos!')
     }
 }
@@ -56,7 +56,7 @@ function folhaDePagamento(){
 folhaDePagamento(valorHora = 5, horaTrabalhadaMes = '350')
 
 /*
-Exemplo de saída:
+Exemplo de saída:git 
 Informações sobre a folha de pagamento:
  Salário Bruto: R$1750
  (-) IR (10%): R$175
